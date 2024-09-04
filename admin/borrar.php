@@ -9,7 +9,6 @@
 
     if (isset($_SESSION['user'])) 
     {
-        #Hello
         $user -> setUser($userSession->getCurrentUser());
         if (!($user -> userAdmin($userSession -> getCurrentUser()))) 
         {
